@@ -10,7 +10,7 @@ export default ({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) => {
 
     useEffect(() => {
         const removeSidebar = (e:any) => {
-            if (!sidebarRef.current?.contains(e.target)) setIsOpen(!isOpen);
+            if (!sidebarRef.current?.contains(e.target)) setIsOpen(false);
         }
 
         document.addEventListener('click', removeSidebar);
