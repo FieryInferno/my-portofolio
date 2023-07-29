@@ -15,7 +15,7 @@ export default function navbar() {
 
     return (
         <>
-            <div className="flex p-4 justify-between items-center">
+            <div className="flex p-4 justify-between items-center relative z-10 bg-white">
                 <div className='font-bold'>My Portofolio</div>
                 <div className="bg-black w-10 h-10 p-2 rounded-md text-center cursor-pointer hover:bg-[#5044EB]" onClick={handleClick}>
                     <FontAwesomeIcon icon={faBars} style={{color: "#fcfcfc",}} />

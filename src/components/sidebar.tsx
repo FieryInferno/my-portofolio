@@ -21,7 +21,7 @@ export default ({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) => {
     }, [isOpen]);
 
     return (
-        <div className={`absolute ${isOpen ? 'left-0' : 'left-[-22rem]'} w-72 inset-y-0 bg-[#1F1F1F] text-white p-12 font-bold h-max transition-all duration-300`} ref={sidebarRef}>
+        <div className={`absolute ${isOpen ? 'left-0' : 'left-[-22rem]'} w-72 inset-y-0 bg-[#1F1F1F] text-white p-12 font-bold h-max transition-all duration-300 z-20`} ref={sidebarRef}>
             <div className='mb-16'>
                 <h1 className="text-4xl">My Portofolio</h1>
             </div>
