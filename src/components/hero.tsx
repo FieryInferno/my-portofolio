@@ -49,7 +49,7 @@ export default () => {
                     </div>
                     <div className="my-8 text-4xl font-bold">Programmer</div>
                     <div className="text-[#636D78] text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae urna risus. Mauris consequat tortor elit, a blandit arcu consequat eu. Sed id sollicitudin risus. Nullam in aliquet massa.</div>
-                    <a className="bg-[#5044eb] text-white py-4 px-8 font-medium rounded-2xl relative inline-block overflow-hidden z-10 cursor-pointer before:absolute before:h-24 before:w-56 before:bg-black before:rounded-[50%]  before:-left-4  before:-top-24  before:-z-10 hover:before:top-[-1rem] hover:before:transition-all hover:before:duration-300">DOWNLOAD CV</a>
+                    <a className="bg-[#5044eb] text-white py-4 px-8 font-medium rounded-2xl relative inline-block overflow-hidden cursor-pointer before:absolute before:h-24 before:w-56 before:bg-black before:rounded-[50%]  before:-left-4  before:-top-24  before:-z-10 hover:before:top-[-1rem] hover:before:transition-all hover:before:duration-300">DOWNLOAD CV</a>
                     <div className="icon-wrapper w-20 h-20 right-8 -bottom-16">
                         <Image src={html} alt="HTML" />
                     </div>
