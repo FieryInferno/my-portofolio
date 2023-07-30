@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
+import html from "../../public/html.svg";
 
 export default () => {
     const circle = useRef<HTMLDivElement>(null);
@@ -31,6 +33,9 @@ export default () => {
                     <div className="my-8 text-4xl font-bold">Programmer</div>
                     <div className="text-[#636D78] text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae urna risus. Mauris consequat tortor elit, a blandit arcu consequat eu. Sed id sollicitudin risus. Nullam in aliquet massa.</div>
                     <a className="bg-[#5044eb] text-white py-4 px-8 font-medium rounded-2xl relative inline-block overflow-hidden z-10 cursor-pointer before:absolute before:h-24 before:w-56 before:bg-black before:rounded-[50%]  before:-left-4  before:-top-24  before:-z-10 hover:before:top-[-1rem] hover:before:transition-all hover:before:duration-300">DOWNLOAD CV</a>
+                    <div className="absolute -bottom-12 right-8 bg-white rounded-[50%] w-20 h-20 flex justify-center shadow-lg hm4-hero-right">
+                        <Image src={html} alt="HTML" />
+                    </div>
                 </div>
             </div>
         </div>
