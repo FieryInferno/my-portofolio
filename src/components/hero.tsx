@@ -7,12 +7,27 @@ import bootstrap from "../../public/bootstrap.svg";
 
 export default () => {
     const circle = useRef<HTMLDivElement>(null);
+    const circle2 = useRef<HTMLDivElement>(null);
+
+    const isElementVisible = (element:HTMLDivElement) => {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
 
     useEffect(() => {
         const handleScroll = () => {
-            setTimeout(() => {
-                if (circle.current) circle.current.style.transform = `translateX(${window.scrollY * 0.01}rem)`;
-            }, 100);
+            const circle2Current = circle2.current;
+
+            if (circle.current) circle.current.style.transform = `translateX(${window.scrollY * 0.01}rem)`;
+            if (circle2Current) {
+                if (isElementVisible(circle2Current)) circle2Current.style.transform = `translateY(${window.scrollY * 0.009}rem)`;
+                else circle2Current.style.transform = `translateY(-1rem)`;
+            }
         }
 
         window.addEventListener('scroll', handleScroll);
@@ -20,12 +35,12 @@ export default () => {
         return () => {
             window.removeEventListener('scroll', handleScroll)
         }
-    }, [circle]);
+    }, [circle, circle2]);
 
     return (
         <div className="relative">
             <div className="big-circle -top-[33rem] -left-[83%]"></div>
-            <div className="bg-[#AEBBFF] w-4 h-4 rounded-full absolute top-12 left-12 transition-all duration-1000" ref={circle}></div>
+            <div className="little-circle bg-[#AEBBFF] w-4 h-4 top-12 left-12" ref={circle}></div>
             <div className="big-circle -bottom-[32%] -left-[35%]"></div>
             <div className="mx-4">
                 <div className="relative">
@@ -39,10 +54,11 @@ export default () => {
                         <Image src={html} alt="HTML" />
                     </div>
                 </div>
-                <div className="h-screen">
-                    <div className="icon-wrapper w-24 h-24 -right-12 top-2/3">
+                <div className="h-screen relative">
+                    <div className="icon-wrapper w-24 h-24 -right-12 top-1/3">
                         <Image src={bootstrap} alt="boostrap" />
                     </div>
+                    <div className="little-circle bottom-52 bg-[#B6DCFD] w-12 h-12 left-32 -translate-y-4" ref={circle2}></div>
                 </div>
             </div>
         </div>
