@@ -8,20 +8,6 @@
     animation: 4s ups-down linear infinite;
 }
 
-.big-circle {
-    background-color: #EAEBFD;
-    width: 40rem;
-    height: 40rem;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.little-circle {
-    border-radius: 50%;
-    position: absolute;
-    transition: 1000ms;
-}
-
 @keyframes ups-down {
     0% {
         -webkit-transform: translateY(0);
@@ -47,4 +33,24 @@
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
+}
+
+.big-circle {
+    background-color: #EAEBFD;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.little-circle {
+    border-radius: 50%;
+    position: absolute;
+    transition: 1000ms;
+}
+
+.services {
+    background: linear-gradient(277.58deg, rgba(102, 213, 236, 0.4) 11.74%, rgba(82, 65, 255, 0.75) 88.26%), #2A1E9E;
+    height: 100vh;
+    position: relative;
 }
