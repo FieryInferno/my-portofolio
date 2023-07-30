@@ -4,6 +4,16 @@ import Image from 'next/image';
 import tangan from '../../public/tangan.svg';
 import email from '../../public/email.svg';
 import { useEffect, useRef } from 'react';
+import Menu from '@/components/menu';
+
+const menu = [
+    'home',
+    'services',
+    'about',
+    'projects',
+    'blog',
+    'contact',
+];
 
 export default ({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) => {
     const sidebarRef = useRef<HTMLDivElement>(null);
@@ -27,12 +37,7 @@ export default ({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) => {
             </div>
             <div className='border border-[#2F2F2F] rounded-3xl mb-16'>
                 <ul>
-                    <li className='px-8 pt-8 pb-4 box-content border-b border-[#2F2F2F] transition-all duration-300 hover:bg-[#5044EB] rounded-t-3xl'>01. HOME</li>
-                    <li className='px-8 py-4 box-content border-b border-[#2F2F2F] transition-all duration-300 hover:bg-[#5044EB]'>02. SERVICES</li>
-                    <li className='px-8 py-4 box-content border-b border-[#2F2F2F] transition-all duration-300 hover:bg-[#5044EB]'>03. ABOUT</li>
-                    <li className='px-8 py-4 box-content border-b border-[#2F2F2F] transition-all duration-300 hover:bg-[#5044EB]'>04. PROJECTS</li>
-                    <li className='px-8 py-4 box-content border-b border-[#2F2F2F] transition-all duration-300 hover:bg-[#5044EB]'>05. BLOG</li>
-                    <li className='px-8 pb-8 py-4 box-content border-b border-[#2F2F2F] transition-all duration-300 hover:bg-[#5044EB] rounded-b-3xl'>06. CONTACT</li>
+                    {menu.map((menu_name, index) => <Menu key={`menu${index}`} menu={menu_name} index={index} last={index + 1  === menu.length}/>)}
                 </ul>
             </div>
             <div className='border border-[#2F2F2F] rounded-3xl'>
