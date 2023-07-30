@@ -1,12 +1,19 @@
 .icon-wrapper {
     position: absolute;
-    bottom: 0;
     background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     animation: 4s ups-down linear infinite;
+}
+
+.big-circle {
+    background-color: #EAEBFD;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    position: absolute;
 }
 
 @keyframes ups-down {
