@@ -53,3 +53,21 @@
     background: linear-gradient(277.58deg, rgba(102, 213, 236, 0.4) 11.74%, rgba(82, 65, 255, 0.75) 88.26%), #2A1E9E;
     position: relative;
 }
+
+.sticky-on {
+    animation: 1s fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -50px, 0);
+        transform: translate3d(0, -50px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
