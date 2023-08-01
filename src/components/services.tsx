@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import control from '../../public/control.svg';
 import webDesignAndLogo from '../../public/web-design-and-logo.svg';
 import technologySolution from '../../public/technology-solution.svg';
@@ -70,11 +69,11 @@ export default () => <div className="services">
     </div>
     <div className='ticker-section'>
         <ul className='ur-ticker'>
-            <li className='inline-block mr-12 uppercase'>we do agency solution</li>
-            <li className='inline-block mr-12 uppercase'>what we love to work with</li>
-            <li className='inline-block mr-12 uppercase'>what we do</li>
-            <li className='inline-block mr-12 uppercase'>we love to work with</li>
-            <li className='inline-block mr-12 uppercase'>we love what we do</li>
+            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we do agency solution</li>
+            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> what we love to work with</li>
+            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> what we do</li>
+            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we love to work with</li>
+            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we love what we do</li>
         </ul>
     </div>
 </div>;
