@@ -1,20 +1,4 @@
-const formatNumber = (count:number) => {
-    const newCount = count + '';
-    const length = newCount.length;
-    let newNumber = '';
-
-    for (let index = 0; index < length; index++) {
-        const element = newCount[length - index - 1];
-        const newIndex = index + 1;
-
-        newNumber += element;
-
-
-        if (newIndex !== length && newIndex % 3 === 0 && length > 3) newNumber += ',';
-    }
-
-    return newNumber.split('').reverse().join('');
-}
+import AnimationCount from '@/components/AnimationCount';
 
 export default ({icon, count, description} : {icon: any, count: number, description: string}) => {
     return (
@@ -24,7 +8,9 @@ export default ({icon, count, description} : {icon: any, count: number, descript
                     {icon}
                 </div>
             </div>
-            <div className='text-2xl text-white font-bold py-4'>{formatNumber(count)}</div>
+            <div className='text-2xl text-white font-bold py-4'>
+                <AnimationCount count={count} />
+            </div>
             <div className='text-white pb-4'>{description}</div>
         </>
     );
