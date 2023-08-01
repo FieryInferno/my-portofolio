@@ -1,3 +1,5 @@
+$primary: #5044EB;
+
 .icon-wrapper {
     position: absolute;
     background-color: white;
@@ -52,6 +54,8 @@
 .services {
     background: linear-gradient(277.58deg, rgba(102, 213, 236, 0.4) 11.74%, rgba(82, 65, 255, 0.75) 88.26%), #2A1E9E;
     position: relative;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .sticky-on {
@@ -136,7 +140,7 @@
         }
 
         .get-started {
-            color: #5044EB;
+            color: $primary;
         }
 
         .arrow {
@@ -156,6 +160,10 @@
             51% {
                 opacity: 1;
             }
+        }
+
+        path {
+            fill: $primary;
         }
     }
 }
