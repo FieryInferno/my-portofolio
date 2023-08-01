@@ -54,8 +54,6 @@ $primary: #5044EB;
 .services {
     background: linear-gradient(277.58deg, rgba(102, 213, 236, 0.4) 11.74%, rgba(82, 65, 255, 0.75) 88.26%), #2A1E9E;
     position: relative;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 
 .sticky-on {
@@ -173,5 +171,29 @@ $primary: #5044EB;
         path {
             animation: 0.3s shake;
         }
+    }
+}
+
+.ticker-section {
+    background: linear-gradient(300.56deg, rgba(102, 213, 236, 0.4) 25.69%, rgba(65, 50, 218, 0.8) 81.99%), #4132DA;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    @keyframes ticker {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .ur-ticker {
+        white-space: nowrap;
+        overflow: hidden;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        font-size: 1.5rem;
+        color: white;
+        animation: ticker 15s linear infinite;
     }
 }
