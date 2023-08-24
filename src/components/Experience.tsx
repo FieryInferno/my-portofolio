@@ -54,6 +54,10 @@ const experience:ExperienceInterface[] = [
     }
 ]
 
-export default () => <div className="bg-white">
-    {experience.map((exp, index) => <ExperienceItem key={index} {...exp} />)}
-</div>;
+export default function () {
+    return (
+        <div className="bg-white mb-16">
+            {experience.map((exp, index) => <ExperienceItem key={index} {...exp} />)}
+        </div>
+    );
+}

@@ -1,7 +1,7 @@
 import { ExperienceInterface } from '@/components/Experience';
 import ListExperience from '@/components/ListExperience';
 
-export default function ExperienceItem(experience: ExperienceInterface) {
+export default function (experience: ExperienceInterface) {
     return (
         <div className="relative">
             <div className="exp-badge">

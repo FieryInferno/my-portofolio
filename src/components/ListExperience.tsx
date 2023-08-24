@@ -1,6 +1,6 @@
 import { ListExperienceInterface } from '@/components/Experience';
 
-export default function ListExperience(list: ListExperienceInterface) {
+export default function (list: ListExperienceInterface) {
     return (
         <li>
             <div className="text-lg font-bold">{list.title}</div>

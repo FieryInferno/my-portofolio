@@ -3,8 +3,9 @@ import Hero from '@/components/hero';
 import Services from '@/components/services';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
+import SliderSkill from '@/components/SliderSkill';
 
-export default function Home() {
+export default function () {
     return (
         <>
             <Navbar />
@@ -12,6 +13,7 @@ export default function Home() {
             <Services />
             <About />
             <Experience />
+            <SliderSkill />
         </>
     )
 }
