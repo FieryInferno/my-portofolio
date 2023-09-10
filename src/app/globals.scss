@@ -263,6 +263,7 @@ body {
                 top: 0;
                 left: -22rem;
                 width: 10000px;
+                gap: 1rem;
 
                 .slide {
                     width: 21rem;
@@ -275,8 +276,6 @@ body {
                     position: relative;
                     border-radius: 2px;
                     background-color: white;
-                    margin-right: 0.5rem;
-                    margin-left: 0.5rem;
                 }
 
                 &.shifting {

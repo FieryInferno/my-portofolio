@@ -42,7 +42,8 @@ export default function () {
             // Transition events
             items.addEventListener('transitionend', () => {
                 items.classList.remove('shifting');
-                if (index === slidesLength) {
+
+                if (index >= slidesLength) {
                     items.style.left = -(1 * 352) + "px";
                     index = 0;
                 }
