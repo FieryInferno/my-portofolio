@@ -1,0 +1,50 @@
+@keyframes showProjectItem {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.recent-project {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    @keyframes showProjectItem {
+        0% {
+            transform: scale(0);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .recent-project-item {
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+        background-color: white;
+        border-radius: 1rem;
+        animation: showProjectItem 0.3s ease 0s 1 normal forwards;
+        padding: 1.75rem;
+
+        @keyframes removeProjectItem {
+            0% {
+                transform: scale(0);
+            }
+        
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        &.delete {
+            animation: removeProjectItem 0.3s ease 0s 1 normal forwards;
+        }
+    }
+}
