@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Experience from '@/components/Experience';
 import SliderSkill from '@/components/SliderSkill';
 import LatestCaseStudies from '@/components/LatestCaseStudies';
+import MyBlog from '@/components/MyBlog';
 
 export default function () {
     return (
@@ -16,6 +17,7 @@ export default function () {
             <Experience />
             <SliderSkill />
             <LatestCaseStudies />
+            <MyBlog />
         </>
     )
 }
