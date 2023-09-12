@@ -6,6 +6,7 @@ import Experience from '@/components/Experience';
 import SliderSkill from '@/components/SliderSkill';
 import LatestCaseStudies from '@/components/LatestCaseStudies';
 import MyBlog from '@/components/MyBlog';
+import Contact from '@/components/Contact';
 
 export default function () {
     return (
@@ -18,6 +19,7 @@ export default function () {
             <SliderSkill />
             <LatestCaseStudies />
             <MyBlog />
+            <Contact />
         </>
     )
 }

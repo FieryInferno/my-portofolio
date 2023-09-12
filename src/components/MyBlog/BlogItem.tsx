@@ -1,8 +1,6 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
-import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, PromiseLikeOfReactNode } from "react";
 
-export default function(props: { image: StaticImport; date: string; time: string; title: string; categories: string[]; }) {
+export default function(props: { image: any; date: string; time: string; title: string; categories: string[]; }) {
     return (
         <div className="mb-8">
             <div className="rounded">

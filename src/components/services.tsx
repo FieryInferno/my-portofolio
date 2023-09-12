@@ -2,7 +2,7 @@ import control from '../../public/control.svg';
 import webDesignAndLogo from '../../public/web-design-and-logo.svg';
 import technologySolution from '../../public/technology-solution.svg';
 import appDevelopment from '../../public/app-development.svg';
-import ServiceItem from '@/components/service_item';
+import ServiceItem from '@/components/ServiceItem';
 import { faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import InformationItem from './InformationItem';
