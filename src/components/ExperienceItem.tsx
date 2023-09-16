@@ -1,7 +1,7 @@
 import { ExperienceInterface } from '@/components/Experience';
 import ListExperience from '@/components/ListExperience';
 
-export default function (experience: ExperienceInterface) {
+export default function ExperienceItem(experience: ExperienceInterface) {
     return (
         <div className="relative lg:basis-1/2">
             <div className="exp-badge">

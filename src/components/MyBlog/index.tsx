@@ -26,7 +26,7 @@ const blogs = [
     },
 ]
 
-export default function () {
+export default function MyBlog() {
     return (
         <div className="bg-[#F7F5F2] py-16">
             <div className="text-center font-bold text-4xl mb-8">

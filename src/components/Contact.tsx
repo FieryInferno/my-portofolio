@@ -21,7 +21,7 @@ const info = [
     },
 ];
 
-export default function() {
+export default function Contact() {
     return (
         <div className="bg-[#1F1F1F] text-white px-4 py-20">
             <div className="font-bold text-5xl mb-4">Let's Work Together</div>

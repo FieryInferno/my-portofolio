@@ -15,7 +15,7 @@ const menu = [
     'contact',
 ];
 
-export default function({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) {
+export default function Sidebar({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) {
     const sidebarRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {

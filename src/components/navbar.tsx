@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 
 config.autoAddCss = false
 
-export default function() {
+export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const handleClick = (e:any) => setIsOpen(!isOpen);
 

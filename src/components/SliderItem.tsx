@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function (props: { name: string, image: any, information: string }) {
+export default function SliderItem(props: { name: string, image: any, information: string }) {
     return (
         <div className="slide">
             <div className="flex flex-col items-center m-8">

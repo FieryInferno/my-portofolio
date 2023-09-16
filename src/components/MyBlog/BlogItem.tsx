@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function(props: { image: any; date: string; time: string; title: string; categories: string[]; }) {
+export default function BlogItem(props: { image: any; date: string; time: string; title: string; categories: string[]; }) {
     return (
         <div className="blog">
             <div className="image-blog">

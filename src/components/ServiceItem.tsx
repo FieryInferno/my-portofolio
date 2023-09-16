@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function({image, title} : {image: string, title: string}) {
+export default function ServiceItem({image, title} : {image: string, title: string}) {
     return (
         <div className='bg-white p-8 rounded-lg mb-4 service-card lg:flex'>
             <div className='mb-4 lg:basis-1/2'>

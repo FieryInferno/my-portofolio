@@ -1,6 +1,6 @@
 import AnimationCount from '@/components/AnimationCount';
 
-export default function({icon, count, description} : {icon: any, count: number, description: string}) {
+export default function InformationItem({icon, count, description} : {icon: any, count: number, description: string}) {
     return (
         <div>
             <div className='inline-block'>

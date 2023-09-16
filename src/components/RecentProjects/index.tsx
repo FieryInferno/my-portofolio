@@ -57,7 +57,7 @@ const recentProject = [
     },
 ];
 
-export default function() {
+export default function RecentProjects() {
     const [currentCategory, setCurrentCategory] = useState('all');
     const projects = useMemo(() => {
         if (currentCategory !== 'all') {

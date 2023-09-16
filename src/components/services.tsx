@@ -47,7 +47,7 @@ const information = [
     },
 ]
 
-export default function() {
+export default function Services() {
     return (
         <div className="services">
             <div className='px-2 lg:px-8'>

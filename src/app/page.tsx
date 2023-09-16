@@ -8,7 +8,7 @@ import LatestCaseStudies from '@/components/LatestCaseStudies';
 import MyBlog from '@/components/MyBlog';
 import Contact from '@/components/Contact';
 
-export default function () {
+export default function Page() {
     return (
         <>
             <Navbar />

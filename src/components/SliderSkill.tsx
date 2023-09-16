@@ -24,7 +24,7 @@ const skills = [
     },
 ];
 
-export default function () {
+export default function SliderSkill() {
     useEffect(() => {
         const items = document.querySelector('#slides') as HTMLElement;
         const slides = items?.querySelectorAll('.slide');

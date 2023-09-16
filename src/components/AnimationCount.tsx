@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-export default function({count} : {count: number}) {
+export default function AnimationCount({count} : {count: number}) {
     const countRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {

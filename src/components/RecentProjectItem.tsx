@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StaticImport } from "next/dist/shared/lib/get-img-props"
 import Image from "next/image"
 
-export default function(props: { image: StaticImport; subtitle: string; title: string }) {
+export default function RecentProjectItem(props: { image: StaticImport; subtitle: string; title: string }) {
     return (
         <div className="recent-project-item">
             <div>

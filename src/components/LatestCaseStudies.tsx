@@ -1,7 +1,7 @@
 import RecentProjects from "@/components/RecentProjects";
 import Button from "./Button";
 
-export default function() {
+export default function LatestCaseStudies() {
     return (
         <div className="bg-[#F7F5F2]">
             <div className="text-[#5044EB] underline text-center font-bold underline-offset-8">Latest Case Studies</div>
