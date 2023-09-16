@@ -46,5 +46,57 @@
         &.delete {
             animation: removeProjectItem 0.3s ease 0s 1 normal forwards;
         }
+
+        img {
+            transition: all 300ms;
+        }
+
+        .explore-btn {
+            background-color: white;
+            height: 5rem;
+            width: 5rem;
+            position: absolute;
+            border-radius: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%) scale(0);
+            transition: all 300ms;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            svg {
+                transform: rotate(-30deg) scale(1.4);
+                color: blue;
+            }
+        }
+
+        h1 {
+            transition: all 300ms;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+
+            .explore-btn {
+                transform: translate(-50%, -100%) scale(1);
+            }
+
+            h1 {
+                color: #5044EB;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .recent-project {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
