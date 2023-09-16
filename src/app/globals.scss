@@ -289,5 +289,15 @@ body {
 @media (min-width: 1024px) {
     body {
         margin-left: 18rem;
+
+        .exp-badge {
+            top: -2rem;
+        }
+
+        .slider-skills {
+            .wrapper {
+                width: 100%;
+            }
+        }
     }
 }

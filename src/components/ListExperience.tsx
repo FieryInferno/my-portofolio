@@ -4,8 +4,8 @@ export default function (list: ListExperienceInterface) {
     return (
         <li>
             <div className="text-lg font-bold">{list.title}</div>
-            <div>{list.company}</div>
-            <div>{list.year}</div>
+            <div className="text-[#5044EB] mb-4">{list.company}</div>
+            <div className="text-[#636D78]">{list.year}</div>
         </li>
     )
 }
