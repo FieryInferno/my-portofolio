@@ -31,7 +31,7 @@ export default ({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) => {
     }, [isOpen]);
 
     return (
-        <div className={`fixed ${isOpen ? 'left-0' : 'left-[-22rem]'} w-72 inset-y-0 bg-[#1F1F1F] text-white p-12 font-bold h-screen transition-all duration-300 z-20 overflow-y-scroll`} ref={sidebarRef}>
+        <div className={`fixed ${isOpen ? 'left-0' : 'left-[-22rem]'} lg:left-0 w-72 inset-y-0 bg-[#1F1F1F] text-white p-12 font-bold h-screen transition-all duration-300 z-20 overflow-y-scroll`} ref={sidebarRef}>
             <div className='mb-16'>
                 <h1 className="text-4xl">My Portofolio</h1>
             </div>
