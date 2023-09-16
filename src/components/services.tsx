@@ -51,7 +51,7 @@ export default function Services() {
     return (
         <div className="services">
             <div className='px-2 lg:px-8'>
-                <div className="pt-16 text-center text-white underline underline-offset-8 font-medium text-xl">What's Going On</div>
+                <div className="pt-16 text-center text-white underline underline-offset-8 font-medium text-xl">What&apos;s Going On</div>
                 <div className="text-center text-white text-3xl font-bold mt-8">My Service Area</div>
                 <div className='my-20 lg:grid lg:grid-cols-2 lg:gap-8'>
                     {services.map(({image, title}, index) => <ServiceItem key={`serviceItem${index}`} image={image} title={title} />)}

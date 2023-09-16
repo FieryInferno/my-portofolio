@@ -31,7 +31,7 @@ export default function AnimationCount({count} : {count: number}) {
         return () => {
             if (currentCountRef) observer.unobserve(currentCountRef);
         }
-    }, [countRef])
+    }, [countRef, count])
 
     return (<div ref={countRef}></div>);
 }
