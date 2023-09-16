@@ -15,7 +15,7 @@ const menu = [
     'contact',
 ];
 
-export default ({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) => {
+export default function({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) {
     const sidebarRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -65,5 +65,5 @@ export default ({isOpen, setIsOpen} : {isOpen:boolean, setIsOpen:Function}) => {
                 </ul>
             </div>
         </div>
-    )
+    );
 }
