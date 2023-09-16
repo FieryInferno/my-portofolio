@@ -41,7 +41,7 @@ export default () => {
     return (
         <div className="relative">
             <div className="big-circle -top-[33rem] lg:-top-[25rem] -left-[83%] lg:-left-60"></div>
-            <div className="little-circle bg-[#AEBBFF] w-4 h-4 top-12 left-12 lg:-top-8 lg:left-36" ref={circle}></div>
+            <div className="little-circle bg-[#AEBBFF] w-4 h-4 top-12 left-12 lg:top-28 lg:left-36" ref={circle}></div>
             <div className="big-circle -bottom-[32%] -left-[35%]"></div>
             <div className="mx-4">
                 <div className="relative lg:flex">
