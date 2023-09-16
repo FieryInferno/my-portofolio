@@ -6,7 +6,7 @@ import Button from "./Button";
 import html from "../../public/html.svg";
 import bootstrap from "../../public/bootstrap.svg";
 
-export default () => {
+export default function() {
     const circle = useRef<HTMLDivElement>(null);
     const circle2 = useRef<HTMLDivElement>(null);
 

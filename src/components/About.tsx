@@ -26,22 +26,26 @@ const personalInformation = [
     },
 ];
 
-export default () => <div className="pt-12 bg-[#F7F5F2] px-3 pb-24 lg:flex">
-    <div className="lg:basis-2/5">
-        <div className="h-96">Untuk foto nanti</div>
-    </div>
-    <div className="lg:basis-3/5">
-        <div className="text-4xl font-bold">M. Bagas Setia</div>
-        <div className="my-8 text-[#5044EB]">Software Developer</div>
-        <div className="font-medium">
-            Continually utilize 24/365 bandwidth before real-time interfaces grow team core <span className="text-[#636D78]">competencies with pandemic commerce. Objectively initiate pandemic users with deliver bricks clicks meta services for bricks and clicks innovation streamline front end aradigms expedite granular human capital rather than intuitive testing procedures</span>
+export default function() {
+    return (
+        <div className="pt-12 bg-[#F7F5F2] px-3 pb-24 lg:flex">
+            <div className="lg:basis-2/5">
+                <div className="h-96">Untuk foto nanti</div>
+            </div>
+            <div className="lg:basis-3/5">
+                <div className="text-4xl font-bold">M. Bagas Setia</div>
+                <div className="my-8 text-[#5044EB]">Software Developer</div>
+                <div className="font-medium">
+                    Continually utilize 24/365 bandwidth before real-time interfaces grow team core <span className="text-[#636D78]">competencies with pandemic commerce. Objectively initiate pandemic users with deliver bricks clicks meta services for bricks and clicks innovation streamline front end aradigms expedite granular human capital rather than intuitive testing procedures</span>
+                </div>
+                <div className="my-12 bg-white p-8 rounded-2xl lg:grid lg:grid-cols-2 lg:gap-4">
+                    {personalInformation.map(({icon, title, description}, index) => <PersonalInformation key={`personalInformation${index}`} icon={icon} title={title} description={description} />)}
+                </div>
+                <div className="lg:flex lg:gap-4">
+                    <Button>HIRE ME NOW</Button>
+                    <Button type="white">DONWLOAD CV</Button>
+                </div>
+            </div>
         </div>
-        <div className="my-12 bg-white p-8 rounded-2xl lg:grid lg:grid-cols-2 lg:gap-4">
-            {personalInformation.map(({icon, title, description}, index) => <PersonalInformation key={`personalInformation${index}`} icon={icon} title={title} description={description} />)}
-        </div>
-        <div className="lg:flex lg:gap-4">
-            <Button>HIRE ME NOW</Button>
-            <Button type="white">DONWLOAD CV</Button>
-        </div>
-    </div>
-</div>;
+    );
+}

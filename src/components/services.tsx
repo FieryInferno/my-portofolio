@@ -47,39 +47,43 @@ const information = [
     },
 ]
 
-export default () => <div className="services">
-    <div className='px-2 lg:px-8'>
-        <div className="pt-16 text-center text-white underline underline-offset-8 font-medium text-xl">What's Going On</div>
-        <div className="text-center text-white text-3xl font-bold mt-8">My Service Area</div>
-        <div className='my-20 lg:grid lg:grid-cols-2 lg:gap-8'>
-            {services.map(({image, title}, index) => <ServiceItem key={`serviceItem${index}`} image={image} title={title} />)}
-        </div>
-        <div className="lg:flex">
-            <div className="lg:basis-1/2">
-                <div className="p-12 bg-[#4752d8c4] border border-[#6770F6] rounded-3xl shadow-[0_13px_42px_#3B4BBF] service-card lg:w-[30rem] lg:flex lg:gap-4 lg:justify-center lg:items-center">
-                    <div>
-                        <span className='text-[#5044EB] bg-white p-6 rounded-full text-2xl mb-8 h-20 w-20 inline-flex justify-center items-center lg:mb-0'>
-                            <FontAwesomeIcon icon={faPhone} className='service-icon' />
-                        </span>
+export default function() {
+    return (
+        <div className="services">
+            <div className='px-2 lg:px-8'>
+                <div className="pt-16 text-center text-white underline underline-offset-8 font-medium text-xl">What's Going On</div>
+                <div className="text-center text-white text-3xl font-bold mt-8">My Service Area</div>
+                <div className='my-20 lg:grid lg:grid-cols-2 lg:gap-8'>
+                    {services.map(({image, title}, index) => <ServiceItem key={`serviceItem${index}`} image={image} title={title} />)}
+                </div>
+                <div className="lg:flex">
+                    <div className="lg:basis-1/2">
+                        <div className="p-12 bg-[#4752d8c4] border border-[#6770F6] rounded-3xl shadow-[0_13px_42px_#3B4BBF] service-card lg:w-[30rem] lg:flex lg:gap-4 lg:justify-center lg:items-center">
+                            <div>
+                                <span className='text-[#5044EB] bg-white p-6 rounded-full text-2xl mb-8 h-20 w-20 inline-flex justify-center items-center lg:mb-0'>
+                                    <FontAwesomeIcon icon={faPhone} className='service-icon' />
+                                </span>
+                            </div>
+                            <div className='text-white font-bold'>
+                                <div className='text-2xl lg:text-3xl lg:mb-2'>+62857 2385 3284</div>
+                                <div className='uppercase'>call me directly anytime</div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='text-white font-bold'>
-                        <div className='text-2xl lg:text-3xl lg:mb-2'>+62857 2385 3284</div>
-                        <div className='uppercase'>call me directly anytime</div>
+                    <div className='py-20 text-center lg:basis-1/2 lg:flex lg:pt-0'>
+                        {information.map(({icon, count, description}, index) => <InformationItem key={`information${index}`} icon={icon} count={count} description={description} />)}
                     </div>
                 </div>
             </div>
-            <div className='py-20 text-center lg:basis-1/2 lg:flex lg:pt-0'>
-                {information.map(({icon, count, description}, index) => <InformationItem key={`information${index}`} icon={icon} count={count} description={description} />)}
+            <div className='ticker-section'>
+                <ul className='ur-ticker'>
+                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we do agency solution</li>
+                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> what we love to work with</li>
+                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> what we do</li>
+                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we love to work with</li>
+                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we love what we do</li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div className='ticker-section'>
-        <ul className='ur-ticker'>
-            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we do agency solution</li>
-            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> what we love to work with</li>
-            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> what we do</li>
-            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we love to work with</li>
-            <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we love what we do</li>
-        </ul>
-    </div>
-</div>;
+    );
+}
