@@ -33,7 +33,7 @@ export default function () {
                 <span>My </span>
                 <span className="text-[#5044EB] bg-[#e4e1f1] inline-block p-[5px] rounded-[2px]">Blog</span>
             </div>
-            <div className="mx-4">
+            <div className="mx-4 lg:grid lg:grid-cols-3 lg:gap-8">
                 {blogs.map((blog, index) => <BlogItem key={index} {...blog} />)}
             </div>
         </div>
