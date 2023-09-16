@@ -1,4 +1,3 @@
-import Image from "next/image";
 import blog from "./../../../public/blog-3.jpg";
 import './style.scss';
 import BlogItem from './BlogItem';
