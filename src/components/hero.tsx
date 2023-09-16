@@ -52,17 +52,18 @@ export default () => {
                         <div className="my-8 text-4xl font-bold lg:text-7xl">Software Developer</div>
                         <div className="text-[#636D78] text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae urna risus. Mauris consequat tortor elit, a blandit arcu consequat eu. Sed id sollicitudin risus. Nullam in aliquet massa.</div>
                         <Button>DOWNLOAD CV</Button>
-                        <div className="icon-wrapper w-20 h-20 right-8 -bottom-16 lg:bottom-3/4">
+                        <div className="icon-wrapper w-20 h-20 right-8 top-16 lg:bottom-3/4">
                             <Image src={html} alt="HTML" />
                         </div>
                     </div>
-                    <div className="lg:basis-1/2"></div>
-                </div>
-                <div className="h-screen relative">
-                    <div className="icon-wrapper w-24 h-24 -right-12 top-1/3 lg:-top-[15rem]">
-                        <Image src={bootstrap} alt="boostrap" />
+                    <div className="lg:basis-1/2">
+                        <div className="h-screen relative">
+                            <div className="icon-wrapper w-24 h-24 -right-12 top-1/3 lg:top-[22rem]">
+                                <Image src={bootstrap} alt="boostrap" />
+                            </div>
+                            <div className="little-circle bottom-52 bg-[#B6DCFD] w-12 h-12 left-32 -translate-y-4" ref={circle2}></div>
+                        </div>
                     </div>
-                    <div className="little-circle bottom-52 bg-[#B6DCFD] w-12 h-12 left-32 -translate-y-4" ref={circle2}></div>
                 </div>
             </div>
         </div>
