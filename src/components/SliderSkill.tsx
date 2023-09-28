@@ -2,9 +2,9 @@
 
 import { useEffect } from "react";
 import SliderItem from "./SliderItem";
-import photoshop from "../../public/photoshop.svg";
-import illustrator from "../../public/illustrator.svg";
-import xd from "../../public/xd.svg";
+import photoshop from "../../public/images/photoshop.svg";
+import illustrator from "../../public/images/illustrator.svg";
+import xd from "../../public/images/xd.svg";
 
 const skills = [
     {

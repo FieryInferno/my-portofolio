@@ -1,8 +1,8 @@
 'use client'
 
 import Image from 'next/image';
-import tangan from '../../public/tangan.svg';
-import email from '../../public/email.svg';
+import tangan from '../../public/images/tangan.svg';
+import email from '../../public/images/email.svg';
 import { useEffect, useRef } from 'react';
 import Menu from '@/components/menu';
 

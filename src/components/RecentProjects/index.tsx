@@ -4,12 +4,12 @@ import { useMemo, useState } from "react";
 import './style.scss';
 import ButtonProject from "@/components/ButtonProject";
 import RecentProjectItem from "@/components/RecentProjectItem";
-import image from "../../../public/project-1.jpg";
-import image1 from "../../../public/project-2.jpg";
-import image2 from "../../../public/project-3.jpg";
-import image3 from "../../../public/project-4.jpg";
-import image4 from "../../../public/project-5.jpg";
-import image5 from "../../../public/project-6.jpg";
+import image from "../../../public/images/project-1.jpg";
+import image1 from "../../../public/images/project-2.jpg";
+import image2 from "../../../public/images/project-3.jpg";
+import image3 from "../../../public/images/project-4.jpg";
+import image4 from "../../../public/images/project-5.jpg";
+import image5 from "../../../public/images/project-6.jpg";
 
 const categories = ['all', 'design', 'branding', 'photography', 'video', 'development'];
 const recentProject = [

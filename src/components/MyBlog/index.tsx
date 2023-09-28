@@ -1,4 +1,4 @@
-import blog from "./../../../public/blog-3.jpg";
+import blog from "./../../../public/images/blog-3.jpg";
 import './style.scss';
 import BlogItem from './BlogItem';
 
@@ -28,7 +28,7 @@ const blogs = [
 
 export default function MyBlog() {
     return (
-        <div className="bg-[#F7F5F2] py-16">
+        <div className="bg-[#F7F5F2] py-16" id="blog">
             <div className="text-center font-bold text-4xl mb-8">
                 <span>My </span>
                 <span className="text-[#5044EB] bg-[#e4e1f1] inline-block p-[5px] rounded-[2px]">Blog</span>

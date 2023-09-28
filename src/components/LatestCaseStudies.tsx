@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function LatestCaseStudies() {
     return (
-        <div className="bg-[#F7F5F2]">
+        <div className="bg-[#F7F5F2]" id="projects">
             <div className="text-[#5044EB] underline text-center font-bold underline-offset-8">Latest Case Studies</div>
             <div className="text-center font-bold text-4xl mt-8 mb-16">My Recent Projects</div>
             <RecentProjects />

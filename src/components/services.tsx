@@ -1,7 +1,7 @@
-import control from '../../public/control.svg';
-import webDesignAndLogo from '../../public/web-design-and-logo.svg';
-import technologySolution from '../../public/technology-solution.svg';
-import appDevelopment from '../../public/app-development.svg';
+import control from '../../public/images/control.svg';
+import webDesignAndLogo from '../../public/images/web-design-and-logo.svg';
+import technologySolution from '../../public/images/technology-solution.svg';
+import appDevelopment from '../../public/images/app-development.svg';
 import ServiceItem from '@/components/ServiceItem';
 import { faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -49,7 +49,7 @@ const information = [
 
 export default function Services() {
     return (
-        <div className="services">
+        <div className="services" id="services">
             <div className='px-2 lg:px-8'>
                 <div className="pt-16 text-center text-white underline underline-offset-8 font-medium text-xl">What&apos;s Going On</div>
                 <div className="text-center text-white text-3xl font-bold mt-8">My Service Area</div>

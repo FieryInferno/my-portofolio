@@ -28,7 +28,7 @@ const personalInformation = [
 
 export default function About() {
     return (
-        <div className="pt-12 bg-[#F7F5F2] px-3 pb-24 lg:flex">
+        <div className="pt-12 bg-[#F7F5F2] px-3 pb-24 lg:flex" id="about">
             <div className="lg:basis-2/5">
                 <div className="h-96">Untuk foto nanti</div>
             </div>

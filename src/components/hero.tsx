@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Button from "./Button";
-import html from "../../public/html.svg";
-import bootstrap from "../../public/bootstrap.svg";
+import html from "../../public/images/html.svg";
+import bootstrap from "../../public/images/bootstrap.svg";
 
 export default function Hero() {
     const circle = useRef<HTMLDivElement>(null);
@@ -38,8 +38,20 @@ export default function Hero() {
         }
     }, [circle, circle2]);
 
+    const handleDownload = () => {
+        debugger
+        const link = document.createElement('a');
+        link.href = '../../public/cv.pdf';
+        link.download = 'true'
+        link.style.display = 'none';
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return (
-        <div className="relative">
+        <div className="relative" id="home">
             <div className="big-circle -top-[33rem] lg:-top-[25rem] -left-[83%] lg:-left-60"></div>
             <div className="little-circle bg-[#AEBBFF] w-4 h-4 top-12 left-12 lg:top-28 lg:left-36" ref={circle}></div>
             <div className="big-circle -bottom-[32%] -left-[35%]"></div>
@@ -50,8 +62,8 @@ export default function Hero() {
                             Hello! I am M. Bagas Setia
                         </div>
                         <div className="my-8 text-4xl font-bold lg:text-7xl">Software Developer</div>
-                        <div className="text-[#636D78] text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae urna risus. Mauris consequat tortor elit, a blandit arcu consequat eu. Sed id sollicitudin risus. Nullam in aliquet massa.</div>
-                        <Button>DOWNLOAD CV</Button>
+                        <div className="text-[#636D78] text-xl mb-8">Saya seorang Programmer lulusan dari Politeknik Negeri Subang jurusan Sistem Informasi. Saya jujur, fokus, berkomitmen, mempunyai kemauan keras dan suka bekerja keras. Saya dapat bekerja secara individu maupun tim. Saya bersedia untuk belajar dan saya yakin dapat memberikan kontribusi yang berarti bagi perusahaan manapun.</div>
+                        <Button href="./cv_m_bagas_setia.pdf" download={true}>DOWNLOAD CV</Button>
                         <div className="icon-wrapper w-20 h-20 right-8 top-16 lg:bottom-3/4">
                             <Image src={html} alt="HTML" />
                         </div>
