@@ -7,7 +7,7 @@ const personalInformation = [
     {
         icon: <FontAwesomeIcon icon={faUser} />,
         title: 'Experience',
-        description: 'More Than 10 Years',
+        description: 'More Than 4 Years',
     },
     {
         icon: <FontAwesomeIcon icon={faPhone} />,
@@ -36,14 +36,14 @@ export default function About() {
                 <div className="text-4xl font-bold">M. Bagas Setia</div>
                 <div className="my-8 text-[#5044EB]">Software Developer</div>
                 <div className="font-medium">
-                    Continually utilize 24/365 bandwidth before real-time interfaces grow team core <span className="text-[#636D78]">competencies with pandemic commerce. Objectively initiate pandemic users with deliver bricks clicks meta services for bricks and clicks innovation streamline front end aradigms expedite granular human capital rather than intuitive testing procedures</span>
+                    Saya seorang Programmer lulusan dari Politeknik Negeri Subang jurusan Sistem Informasi. Saya jujur, fokus, berkomitmen, mempunyai kemauan keras dan suka bekerja keras. Saya dapat bekerja secara individu maupun tim. Saya bersedia untuk belajar dan saya yakin dapat memberikan kontribusi yang berarti bagi perusahaan manapun.
                 </div>
                 <div className="my-12 bg-white p-8 rounded-2xl lg:grid lg:grid-cols-2 lg:gap-4">
                     {personalInformation.map(({icon, title, description}, index) => <PersonalInformation key={`personalInformation${index}`} icon={icon} title={title} description={description} />)}
                 </div>
                 <div className="lg:flex lg:gap-4">
-                    <Button>HIRE ME NOW</Button>
-                    <Button type="white">DONWLOAD CV</Button>
+                    {/* <Button>HIRE ME NOW</Button> */}
+                    <Button href="./cv_m_bagas_setia.pdf" download={true}>DOWNLOAD CV</Button>
                 </div>
             </div>
         </div>

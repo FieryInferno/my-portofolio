@@ -38,18 +38,6 @@ export default function Hero() {
         }
     }, [circle, circle2]);
 
-    const handleDownload = () => {
-        debugger
-        const link = document.createElement('a');
-        link.href = '../../public/cv.pdf';
-        link.download = 'true'
-        link.style.display = 'none';
-
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
-
     return (
         <div className="relative" id="home">
             <div className="big-circle -top-[33rem] lg:-top-[25rem] -left-[83%] lg:-left-60"></div>

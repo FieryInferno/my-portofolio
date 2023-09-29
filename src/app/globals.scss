@@ -184,7 +184,7 @@ body {
 
         @keyframes ticker {
             0% {
-                transform: translateX(100%);
+                transform: translateX(200%);
             }
             100% {
                 transform: translateX(-100%);
@@ -197,7 +197,7 @@ body {
             padding-bottom: 2.5rem;
             font-size: 1.5rem;
             color: white;
-            animation: ticker 30s linear infinite;
+            animation: ticker 5s linear infinite;
             display: inline-block;
         }
     }

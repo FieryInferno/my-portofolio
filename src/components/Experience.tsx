@@ -16,19 +16,19 @@ const experience:ExperienceInterface[] = [
         title: 'experience',
         list: [
             {
-                title: 'BSc in Computer Science',
-                company: 'Amar Bazar Ltd. Full-time',
-                year: '2016-2022',
+                title: 'Frontend Developer',
+                company: 'Fox Logger',
+                year: 'Januari 2023 - Now',
             },
             {
-                title: 'Sr. UI/UX Specialist',
-                company: 'Amar Bazar Ltd. Full-time',
-                year: '2016-2022',
+                title: 'Frontend Developer',
+                company: 'PT. Inovasi Kesehatan Indonesia',
+                year: 'November 2021 - November 2022',
             },
             {
-                title: 'Website Plugins Designer',
-                company: 'Amar Bazar Ltd. Full-time',
-                year: '2016-2022',
+                title: 'Fullstack Developer',
+                company: 'CV. Kreasi Teknologi Nusantara',
+                year: 'April 2021 - November 2021',
             },
         ],
     },
@@ -36,19 +36,9 @@ const experience:ExperienceInterface[] = [
         title: 'education',
         list: [
             {
-                title: 'BSc in Computer Science',
-                company: 'Amar Bazar Ltd. Full-time',
-                year: '2016-2022',
-            },
-            {
-                title: 'Sr. UI/UX Specialist',
-                company: 'Amar Bazar Ltd. Full-time',
-                year: '2016-2022',
-            },
-            {
-                title: 'Website Plugins Designer',
-                company: 'Amar Bazar Ltd. Full-time',
-                year: '2016-2022',
+                title: 'D3 Sistem Informasi',
+                company: 'Politeknik Negeri Subang',
+                year: '2017 - 2020',
             },
         ],
     }

@@ -45,7 +45,9 @@ const information = [
         count: 407,
         description: 'Happy Clients in 25 Years',
     },
-]
+];
+
+const tickers = ['focus', 'commitment', 'sheer will'];
 
 export default function Services() {
     return (
@@ -77,11 +79,7 @@ export default function Services() {
             </div>
             <div className='ticker-section'>
                 <ul className='ur-ticker'>
-                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we do agency solution</li>
-                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> what we love to work with</li>
-                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> what we do</li>
-                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we love to work with</li>
-                    <li className='inline-block mr-12 uppercase'><FontAwesomeIcon icon={faStar} /> we love what we do</li>
+                    {tickers.map((ticker, index) => <li className='inline-block mr-12 uppercase' key={index}><FontAwesomeIcon icon={faStar} /> {ticker}</li>)}
                 </ul>
             </div>
         </div>
