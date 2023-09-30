@@ -91,7 +91,7 @@ export default function SliderSkill() {
             items.addEventListener('transitionend', () => {
                 items.classList.remove('shifting');
 
-                if (index === skills.length) {
+                if (index >= skills.length || Math.abs(items.offsetLeft) > Math.abs(-352 * skills.length)) {
                     items.style.left = -(1 * 352) + "px";
                     index = 0;
                 }
