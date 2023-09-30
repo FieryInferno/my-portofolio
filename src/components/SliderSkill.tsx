@@ -2,25 +2,67 @@
 
 import { useEffect } from "react";
 import SliderItem from "./SliderItem";
-import photoshop from "../../public/images/photoshop.svg";
-import illustrator from "../../public/images/illustrator.svg";
-import xd from "../../public/images/xd.svg";
+import php from '../../public/images/php.png';
+import html from '../../public/images/html.png';
+import css from '../../public/images/html.svg';
+import javascript from '../../public/images/javascript.webp';
+import codeigniter from '../../public/images/codeigniter.png';
+import laravel from '../../public/images/laravel.png';
+import react from '../../public/images/react.png';
+import flutter from '../../public/images/flutter.jpeg';
+import bootstrap from '../../public/images/bootstrap.svg';
+import tailwind from '../../public/images/tailwind.png';
 
 const skills = [
     {
-        name: 'Photoshop',
-        image: photoshop,
-        information: '99%'
-    },
-    {
-        name: 'Illustrator',
-        image: illustrator,
+        name: 'HTML',
+        image: html,
         information: '80%',
     },
     {
-        name: 'XD',
-        image: xd,
-        information: '90%',
+        name: 'CSS',
+        image: css,
+        information: '80%',
+    },
+    {
+        name: 'Bootstrap',
+        image: bootstrap,
+        information: '80%',
+    },
+    {
+        name: 'Javascript',
+        image: javascript,
+        information: '80%',
+    },
+    {
+        name: 'PHP',
+        image: php,
+        information: '80%'
+    },
+    {
+        name: 'Codeigniter',
+        image: codeigniter,
+        information: '80%'
+    },
+    {
+        name: 'Laravel',
+        image: laravel,
+        information: '80%'
+    },
+    {
+        name: 'React JS',
+        image: react,
+        information: '80%'
+    },
+    {
+        name: 'Tailwind',
+        image: tailwind,
+        information: '80%'
+    },
+    {
+        name: 'Flutter',
+        image: flutter,
+        information: '80%'
     },
 ];
 
@@ -30,8 +72,14 @@ export default function SliderSkill() {
         const slides = items?.querySelectorAll('.slide');
         const slidesLength = slides!.length;
         const firstSlide = slides![0];
+        const secondSlide = slides![1];
+        const thirdSlide = slides![2];
+        const fourthSlide = slides![3];
         const lastSlide = slides![slidesLength - 1];
         const cloneFirst = firstSlide.cloneNode(true);
+        const cloneSecond = secondSlide.cloneNode(true);
+        const cloneThird = thirdSlide.cloneNode(true);
+        const cloneFourth = fourthSlide.cloneNode(true);
         const cloneLast = lastSlide.cloneNode(true);
         let index = 0;
         const shiftSlide = () => {
@@ -43,7 +91,7 @@ export default function SliderSkill() {
             items.addEventListener('transitionend', () => {
                 items.classList.remove('shifting');
 
-                if (index >= slidesLength) {
+                if (index === skills.length) {
                     items.style.left = -(1 * 352) + "px";
                     index = 0;
                 }
@@ -51,9 +99,9 @@ export default function SliderSkill() {
         }
 
 
-        if (slidesLength === 3) {
+        if (slidesLength === skills.length) {
             // Clone first and last child
-            items?.appendChild(cloneFirst!);
+            items?.append(cloneFirst, cloneSecond, cloneThird, cloneFourth);
             items?.insertBefore(cloneLast, firstSlide);
         }
 

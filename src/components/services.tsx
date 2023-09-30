@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import InformationItem from './InformationItem';
 
 const services = [
-    {image: control, title: 'Web Development'},
-    {image: webDesignAndLogo, title: 'Web Design & Logo'},
-    {image: technologySolution, title: 'Technology Solution'},
+    {image: control, title: 'Web Developer'},
+    {image: webDesignAndLogo, title: 'Software Engineer'},
+    {image: technologySolution, title: 'Mobile Developer'},
     {image: appDevelopment, title: 'App Development'},
 ];
 
