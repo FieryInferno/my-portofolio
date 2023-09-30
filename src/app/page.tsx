@@ -18,7 +18,7 @@ export default function Page() {
             <Experience />
             <SliderSkill />
             <LatestCaseStudies />
-            <MyBlog />
+            {/* <MyBlog /> */}
             <Contact />
         </>
     )

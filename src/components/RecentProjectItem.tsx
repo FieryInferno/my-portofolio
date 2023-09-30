@@ -10,7 +10,7 @@ export default function RecentProjectItem(props: { image: StaticImport; subtitle
                 <div className="explore-btn">
                     <FontAwesomeIcon icon={faArrowRight} />
                 </div>
-                <Image src={props.image} alt="project" className="rounded-lg mb-8" />
+                <Image src={props.image} alt="project" className="rounded-lg mb-8 h-44 object-contain" />
             </div>
             <div className="text-[#636D78]">{props.subtitle}</div>
             <h1 className="font-bold text-xl">{props.title}</h1>

@@ -4,57 +4,54 @@ import { useMemo, useState } from "react";
 import './style.scss';
 import ButtonProject from "@/components/ButtonProject";
 import RecentProjectItem from "@/components/RecentProjectItem";
-import image from "../../../public/images/project-1.jpg";
-import image1 from "../../../public/images/project-2.jpg";
-import image2 from "../../../public/images/project-3.jpg";
-import image3 from "../../../public/images/project-4.jpg";
-import image4 from "../../../public/images/project-5.jpg";
-import image5 from "../../../public/images/project-6.jpg";
+import webAppFoxLogger from "../../../public/images/web-app-foxlogger.png";
+import landingpageFoxLogger from "../../../public/images/landingpage-foxlogger.png";
+import aplikasiPendeteksiPenyakitTanaman from "../../../public/images/aplikasi_pendeteksi_penyakit_tanaman.jpeg";
 
-const categories = ['all', 'design', 'branding', 'photography', 'video', 'development'];
+const categories = ['all', 'web app', 'landing page', 'mobile'];
 const recentProject = [
     {
-        image: image,
-        subtitle: 'Website Animation',
-        title: 'Make Up Product Website',
-        category: 'design',
+        image: webAppFoxLogger,
+        subtitle: 'Web App',
+        title: 'Web Tracker Fox Logger',
+        category: 'web app',
     },
     {
-        image: image1,
-        subtitle: 'Website Animation',
-        title: 'Make Up Product Website',
-        category: 'branding',
+        image: landingpageFoxLogger,
+        subtitle: 'Landing Page',
+        title: 'Landing Page Fox Logger',
+        category: 'landing page',
     },
     {
-        image: image2,
-        subtitle: 'Website Animation',
-        title: 'Make Up Product Website',
-        category: 'photography',
+        image: aplikasiPendeteksiPenyakitTanaman,
+        subtitle: 'Mobile App',
+        title: 'Aplikasi Pendeteksi Penyakit Tanaman',
+        category: 'mobile',
     },
-    {
-        image: image3,
-        subtitle: 'Website Animation',
-        title: 'Make Up Product Website',
-        category: 'video',
-    },
-    {
-        image: image4,
-        subtitle: 'Website Animation',
-        title: 'Make Up Product Website',
-        category: 'development',
-    },
-    {
-        image: image5,
-        subtitle: 'Website Animation',
-        title: 'Make Up Product Website',
-        category: 'design',
-    },
-    {
-        image: image4,
-        subtitle: 'Website Animation',
-        title: 'Make Up Product Website',
-        category: 'branding',
-    },
+    // {
+    //     image: image3,
+    //     subtitle: 'Website Animation',
+    //     title: 'Make Up Product Website',
+    //     category: 'video',
+    // },
+    // {
+    //     image: image4,
+    //     subtitle: 'Website Animation',
+    //     title: 'Make Up Product Website',
+    //     category: 'development',
+    // },
+    // {
+    //     image: image5,
+    //     subtitle: 'Website Animation',
+    //     title: 'Make Up Product Website',
+    //     category: 'design',
+    // },
+    // {
+    //     image: image4,
+    //     subtitle: 'Website Animation',
+    //     title: 'Make Up Product Website',
+    //     category: 'branding',
+    // },
 ];
 
 export default function RecentProjects() {
